@@ -1,0 +1,130 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f0f3f7;  /* 연한 배경 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+}
+
+.login-card {
+    background: #e0e5ec;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1), -5px -5px 15px rgba(255, 255, 255, 0.5);
+    padding: 40px;
+    width: 100%;
+    margin-top: 30px;
+    max-width: 400px;
+    text-align: center;
+    position: relative;
+}
+
+.home-container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+}
+
+.home-card {
+	margin-top: 30px;
+    background: #e0e5ec;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1), -5px -5px 15px rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    width: 100%;
+    max-width: 4200px;
+    text-align: center;
+    position: relative;
+}
+
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    background: #e0e5ec;
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1), inset -5px -5px 10px rgba(255, 255, 255, 0.5);
+    transition: all 0.3s ease;
+}
+
+.input-group input:focus {
+    outline: none;
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.2), inset -5px -5px 10px rgba(255, 255, 255, 0.7);
+}
+
+.btn {
+    width: 100%;
+    padding: 15px;
+    background: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1), -5px -5px 15px rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: #45a049;
+}
+
+.signup-link {
+    margin-top: 20px;
+}
+
+.signup-link a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 600px) {
+    .login-card {
+        padding: 20px;
+    }
+
+    .input-group input, button {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .login-card h2 {
+        font-size: 20px;
+    }
+}

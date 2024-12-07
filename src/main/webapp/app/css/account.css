@@ -1,0 +1,152 @@
+/* 기본 설정 */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f3f7;
+    color: #333;
+}
+
+/* 컨테이너 */
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* 헤더 */
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 24px;
+    color: #555;
+}
+
+/* 카드 */
+.card {
+    background: #e0e5ec;
+    border-radius: 12px;
+    box-shadow: 8px 8px 16px #b8bcc0, -8px -8px 16px #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    text-align: center;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* 계좌 목록 */
+.account-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.account-list li {
+    margin: 10px 0;
+    font-size: 16px;
+    background: #ffffff;
+    padding: 12px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px #b8bcc0, -4px -4px 8px #ffffff;
+}
+
+/* 입력 폼 */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+form input {
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 12px;
+    border: none;
+    margin-bottom: 20px;
+    background: #e0e5ec;
+    box-shadow: inset 4px 4px 8px #b8bcc0, inset -4px -4px 8px #ffffff;
+    transition: box-shadow 0.3s ease;
+}
+
+form input:focus {
+    box-shadow: inset 2px 2px 6px #b8bcc0, inset -2px -2px 6px #ffffff;
+    outline: none;
+}
+
+/* 제출 버튼 */
+button {
+    padding: 12px;
+    font-size: 16px;
+    background: #e0e5ec;
+    border: none;
+    border-radius: 12px;
+    color: #333;
+    cursor: pointer;
+    box-shadow: 8px 8px 16px #b8bcc0, -8px -8px 16px #ffffff;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    background: #d0d5dc;
+}
+
+button:active {
+    box-shadow: inset 8px 8px 16px #b8bcc0, inset -8px -8px 16px #ffffff;
+}
+
+/* 돌아가기 버튼 */
+.tabs {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.tab {
+    padding: 12px 20px;
+    font-size: 16px;
+    background: #e0e5ec;
+    border: none;
+    border-radius: 12px;
+    text-align: center;
+    color: #333;
+    cursor: pointer;
+    box-shadow: 8px 8px 16px #b8bcc0, -8px -8px 16px #ffffff;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tab:hover {
+    background: #d0d5dc;
+}
+
+.tab:active {
+    box-shadow: inset 8px 8px 16px #b8bcc0, inset -8px -8px 16px #ffffff;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 600px) {
+    .header h1 {
+        font-size: 20px;
+    }
+
+    button, .tab {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .account-list li {
+        font-size: 14px;
+    }
+
+    form input {
+        font-size: 14px;
+    }
+}

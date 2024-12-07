@@ -1,0 +1,119 @@
+/* 전체 레이아웃 설정 */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f3f7;
+    color: #333;
+}
+
+/* 컨테이너 */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+/* 헤더 스타일 */
+.header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #e0e5ec;
+    border-radius: 12px;
+    box-shadow: 8px 8px 16px #b8bcc0, -8px -8px 16px #ffffff;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 24px;
+    margin: 0;
+    color: #333;
+}
+
+
+/* 성함 타이틀 */
+.nameBar{
+	text-align: left;
+	padding: 10px 0 10px 30px;
+	background-color: #e0e5ec;
+    border-radius: 12px;
+    box-shadow: 8px 8px 16px #b8bcc0, -8px -8px 16px #ffffff;
+    margin-bottom: 20px;
+}
+
+.nameBar h3{
+	color: #333;
+}
+
+/* 카드 스타일 */
+.card {
+    background: #e0e5ec;
+    border-radius: 12px;
+    box-shadow: 8px 8px 16px #b8bcc0, -8px -8px 16px #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.card h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+/* 차트 컨테이너 크기 조정 */
+canvas {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+/* 하단 버튼들 */
+.tabs {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.tab {
+    flex: 1;
+    padding: 15px;
+    font-size: 16px;
+    background: #e0e5ec;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 8px 8px 16px #b8bcc0, -8px -8px 16px #ffffff;
+    text-align: center;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+}
+
+
+
+.tab:hover {
+    background-color: #d0d5dc;
+}
+
+.tab:active {
+    box-shadow: inset 8px 8px 16px #b8bcc0, inset -8px -8px 16px #ffffff;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 600px) {
+    .header h1 {
+        font-size: 20px;
+    }
+
+    .card h2 {
+        font-size: 16px;
+    }
+
+    .tab {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
